@@ -3,7 +3,7 @@
 
 ## What is Liquid XML Objects?
 
-Liquid XML Objects in an [XML Data Binding](https://www.liquid-technologies.com/xml-objects) tool written by [Liquid Technologies](https://www.liquid-technologies.com/) that enables you to load XML Documents into a strongly typed object model within your C# or Visual Basic .Net source code.
+Liquid XML Objects is a [XML Data Binding](https://www.liquid-technologies.com/xml-objects) tool written by [Liquid Technologies](https://www.liquid-technologies.com/) that enables you to load XML Documents into a strongly typed object model within your C# or Visual Basic .Net source code.
 
 Meaning fewer coding errors, reduced development and testing time, and an increase in schema conformance and coding reliability.
 
