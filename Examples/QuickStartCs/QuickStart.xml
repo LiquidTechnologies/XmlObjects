@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickStart</name>
+    </assembly>
+    <members>
+        <member name="T:QuickStartCs.LxRuntimeRequirementsWritten">
+            <summary>Contains library level properties, and ensures the version of the runtime used matches the version used to generate it.</summary>
+        </member>
+        <member name="T:QuickStartCs.Bs.GenreTypeEnum">
+            <summary>An enumeration representing XSD simple type GenreType@http://www.liquid-technologies.com/sample/bookstore</summary>
+            <XsdPath>schema:Bookstore.xsd/simpleType:GenreType</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>57:3-64:20</XsdLocation>
+        </member>
+        <member name="F:QuickStartCs.Bs.GenreTypeEnum.Horror">
+            <summary>Represents the value 'Horror' in the XML</summary>
+        </member>
+        <member name="F:QuickStartCs.Bs.GenreTypeEnum.Reference">
+            <summary>Represents the value 'Reference' in the XML</summary>
+        </member>
+        <member name="F:QuickStartCs.Bs.GenreTypeEnum.Scifi">
+            <summary>Represents the value 'Scifi' in the XML</summary>
+        </member>
+        <member name="F:QuickStartCs.Bs.GenreTypeEnum.Fiction">
+            <summary>Represents the value 'Fiction' in the XML</summary>
+        </member>
+        <member name="T:QuickStartCs.Bs.AuthorNameTypeCt">
+            <summary>A class representing the root XSD complexType authorNameType@http://www.liquid-technologies.com/sample/bookstore</summary>
+            <XsdPath>schema:Bookstore.xsd/complexType:authorNameType</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>44:3-56:21</XsdLocation>
+        </member>
+        <member name="P:QuickStartCs.Bs.AuthorNameTypeCt.First_Name">
+            <summary>A <see cref="T:System.String" />, Required : should not be set to null</summary>
+            <remarks>
+              The authors first name.<br/>
+              Max 50 characters.
+            </remarks>
+        </member>
+        <member name="P:QuickStartCs.Bs.AuthorNameTypeCt.Last_Name">
+            <summary>A <see cref="T:System.String" />, Required : should not be set to null</summary>
+        </member>
+        <member name="T:QuickStartCs.Bs.BookstoreTypeCt">
+            <summary>A class representing the root XSD complexType bookstoreType@http://www.liquid-technologies.com/sample/bookstore</summary>
+            <XsdPath>schema:Bookstore.xsd/complexType:bookstoreType</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>10:3-16:21</XsdLocation>
+        </member>
+        <member name="P:QuickStartCs.Bs.BookstoreTypeCt.Books">
+            <summary>
+              A class derived from <see cref="T:QuickStartCs.Bs.BookTypeCt" />.<br/><br/>
+              Allowable types are <br/>
+                  <see cref="T:QuickStartCs.Bs.BookTypeCt" />
+            </summary>
+        </member>
+        <member name="T:QuickStartCs.Bs.BookTypeCt">
+            <summary>A class representing the root XSD complexType bookType@http://www.liquid-technologies.com/sample/bookstore</summary>
+            <XsdPath>schema:Bookstore.xsd/complexType:bookType</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>17:3-43:21</XsdLocation>
+        </member>
+        <member name="P:QuickStartCs.Bs.BookTypeCt.Price">
+            <summary>The value for the attribute price</summary>
+            <XsdPath>schema:Bookstore.xsd/complexType:bookType/attribute:price</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>36:5-38:37</XsdLocation>
+        </member>
+        <member name="P:QuickStartCs.Bs.BookTypeCt.Publicationdate">
+            <summary>The value for the optional attribute publicationdate</summary>
+            <XsdPath>schema:Bookstore.xsd/complexType:bookType/attribute:publicationdate</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>39:5-40:38</XsdLocation>
+        </member>
+        <member name="P:QuickStartCs.Bs.BookTypeCt.ISBN">
+            <summary>The value for the optional attribute ISBN</summary>
+            <XsdPath>schema:Bookstore.xsd/complexType:bookType/attribute:ISBN</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>41:5-42:40</XsdLocation>
+        </member>
+        <member name="P:QuickStartCs.Bs.BookTypeCt.Title">
+            <summary>A <see cref="T:System.String" />, Required : should not be set to null</summary>
+            <remarks>
+              The title of the book. <br/>
+              Max 50 characters.
+            </remarks>
+        </member>
+        <member name="P:QuickStartCs.Bs.BookTypeCt.Author">
+            <summary>
+              A class derived from <see cref="T:QuickStartCs.Bs.AuthorNameTypeCt" />.<br/><br/>
+              Allowable types are <br/>
+                  <see cref="T:QuickStartCs.Bs.AuthorNameTypeCt" />
+            </summary>
+        </member>
+        <member name="P:QuickStartCs.Bs.BookTypeCt.Genre">
+            <summary>A nullable <see cref="T:QuickStartCs.Bs.GenreTypeEnum" />, Optional : null when not set</summary>
+        </member>
+        <member name="T:QuickStartCs.Bs.BookstoreElm">
+            <summary>A class representing the root XSD element bookstore@http://www.liquid-technologies.com/sample/bookstore</summary>
+            <XsdPath>schema:Bookstore.xsd/element:bookstore</XsdPath>
+            <XsdFile>D:\Development21\Liquid\Applications\XmlDataBinder\Documentation\xml-objects\examples\QuickStart\Bookstore.xsd</XsdFile>
+            <XsdLocation>8:3-9:42</XsdLocation>
+        </member>
+        <member name="T:QuickStartCs.Xsd.AnyTypeCt">
+            <summary>A class representing the root XSD complexType anyType@http://www.w3.org/2001/XMLSchema</summary>
+            <XsdPath>schema:.../www.w3.org/2001/XMLSchema/complexType:anyType</XsdPath>
+            <XsdFile>http://www.w3.org/2001/XMLSchema</XsdFile>
+            <XsdLocation>Empty</XsdLocation>
+        </member>
+        <member name="M:QuickStartCs.Xsd.AnyTypeCt.#ctor">
+            <summary>Constructor : create a <see cref="T:QuickStartCs.Xsd.AnyTypeCt" /> element &lt;anyType xmlns='http://www.w3.org/2001/XMLSchema'&gt;</summary>
+        </member>
+        <member name="T:QuickStartCs.BookstoreValidator">
+            <summary>
+            Provides a validator based on the original XSD schema files. 
+            </summary>
+        </member>
+        <member name="M:QuickStartCs.BookstoreValidator.#ctor">
+            <summary>
+            Initializes the validator, loads and compiles the XSD schemas.
+            </summary>
+            <remarks>
+            This is an expensive operation so consider caching this object.
+            </remarks>
+        </member>
+    </members>
+</doc>

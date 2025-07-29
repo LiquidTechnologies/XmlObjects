@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bs:bookstore xmlns:bs="http://www.liquid-technologies.com/sample/bookstore" >
+    <bs:book price="23.99" publicationdate="2002-06-01" ISBN="0596002521">
+        <bs:title>XML Schema</bs:title>
+        <bs:author>
+            <bs:first-name>Eric</bs:first-name>
+            <bs:last-name>van der Vlist</bs:last-name>
+        </bs:author>
+        <bs:genre>Reference</bs:genre>
+    </bs:book>
+</bs:bookstore>

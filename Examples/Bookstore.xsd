@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid Studio (https://www.liquid-technologies.com)-->
+<xsd:schema xmlns:bs="http://www.liquid-technologies.com/sample/bookstore"
+            elementFormDefault="qualified"
+            targetNamespace="http://www.liquid-technologies.com/sample/bookstore"
+            version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="bookstore"
+               type="bs:bookstoreType" />
+  <xsd:complexType name="bookstoreType">
+    <xsd:sequence minOccurs="0"
+                  maxOccurs="unbounded">
+      <xsd:element name="book"
+                   type="bs:bookType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="bookType">
+    <xsd:sequence>
+      <xsd:element name="title">
+        <xsd:annotation>
+          <xsd:documentation>The title of the book. 
+Max 50 characters.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="author"
+                   type="bs:authorNameType" />
+      <xsd:element name="genre"
+                   type="bs:GenreType"
+                   minOccurs="0" />
+    </xsd:sequence>
+    <xsd:attribute name="price"
+                   type="xsd:decimal"
+                   use="required" />
+    <xsd:attribute name="publicationdate"
+                   type="xsd:date" />
+    <xsd:attribute name="ISBN"
+                   type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType name="authorNameType">
+    <xsd:sequence>
+      <xsd:element name="first-name"
+                   type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>The authors first name.
+Max 50 characters.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="last-name"
+                   type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="GenreType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Horror" />
+      <xsd:enumeration value="Reference" />
+      <xsd:enumeration value="Scifi" />
+      <xsd:enumeration value="Fiction" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
